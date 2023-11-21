@@ -1,15 +1,15 @@
 package it.unibo.inner.api;
 
 /**
- * This interface represents a predicate.
- * A predicate is a function that takes an element and returns a boolean.
- * @param <T> the type of the element to test.
+ *Questa interfaccia rappresenta un predicato.
+ * Un predicato è una funzione che accetta un elemento e restituisce un valore booleano.
+ * @param <T> il tipo dell'elemento da testare.
  */
 public interface Predicate<T> {
     /**
-     * Tests the given element.
-     * @param elem the element to test.
-     * @return true if the element satisfies the predicate, false otherwise.
+     * Verifica l'elemento specificato.
+     * @param elem l'elemento da testare.
+     * @return true se l'elemento soddisfa il predicato, false altrimenti.
      */
     boolean test(T elem);
 }

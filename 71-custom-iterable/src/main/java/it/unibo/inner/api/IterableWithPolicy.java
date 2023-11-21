@@ -1,13 +1,13 @@
 package it.unibo.inner.api;
 
 /**
- * This interface represents an iterable collection with a policy.
- * The policy is used to filter out the elements during the iteration.
+ * Questa interfaccia rappresenta una raccolta iterabile con una policy.
+ * La policy viene utilizzata per filtrare gli elementi durante l'iterazione.
  */
 public interface IterableWithPolicy<T> extends Iterable<T> {
     /**
-     * Configures the policy used to filter out the elements to iterate.
-     * @param filter the predicate used to filter out the elements in the collection during the iteration.
+     * Configura la policy utilizzata per filtrare gli elementi da iterare.
+     * @param filter il predicato utilizzato per filtrare gli elementi nella raccolta durante l'iterazione.
      */
     void setIterationPolicy(Predicate<T> filter);
 }
